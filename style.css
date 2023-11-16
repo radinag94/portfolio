@@ -1,0 +1,43 @@
+body{
+    font-family: 'Cabin', sans-serif;
+    background-size: 100vh;
+    background-image: url("./img/alexander-grey-62vi3TG5EDg-unsplash.jpg");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    background-color: aliceblue;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+}
+.container {
+    display: grid; 
+    grid-template-areas: 
+    "header"
+    "main"
+    "footer"
+    ;
+}
+header {
+    display: grid;
+    grid-template-areas: "nav span";
+    font-size: 20px;
+  
+
+}
+nav {
+display: grid;
+grid-template-areas: "a a a a";
+margin-left: 20px;
+margin-top: 20px;
+grid-template-columns: repeat(8, 1fr)
+}
+a {
+    text-decoration: none;
+}
+span{
+    text-align:end;
+    margin-right: 20px;
+    margin-top: 20px;
+}
