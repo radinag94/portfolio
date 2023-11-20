@@ -146,10 +146,32 @@ ul {
 ul li {
   font-size: 20px;
 }
-
-.telerik-academy {
-  background-color: #faf1fe;
+.education-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
 }
+.education-section {
+    display: grid;
+    grid-template-rows: 0.3fr 1fr ;
+    width: 100%;
+    justify-items: center;
+}
+.education {
+  /* background-color: #faf1fe; */
+  padding: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+}
+
+.education-logo {
+    width: 20%;
+    /* height: 20vh; */
+
+}
+
+
 
 @media screen and (max-width: 900px) {
   .project {
@@ -164,6 +186,31 @@ ul li {
     width: 80%;
   }
   .about-container p {
-    padding: 30px 60px
+    padding: 30px 60px;
+    margin: 0 auto;
   }
+  .education-container {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+.technologies-section {
+    display: grid;
+    grid-template-rows: 0.3fr 1fr;
+    width: 100%;
+    justify-items: center;
+
+}
+.technologies-images {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 0.2fr 0.2fr 0.2fr;
+    justify-items: center;
+    align-items: center;
+gap: 20px;
+}
+.tech-logo {
+    width: auto;
+    height: 10vh;
 }
