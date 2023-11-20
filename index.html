@@ -11,13 +11,28 @@
 </head>
 <body class="container">
    <header>
-    <nav>
-      <a href="#about">About</a>
-      <a href="#projects">Projects</a>
-      <a href="#education">Education</a>
-      <a href="#contact">Contact</a>
+    <nav class="navbar">
+      <ul class="nav-menu">
+        <li class="nav-item">
+      <a href="#about" class="nav-link">About</a>
+    </li>
+    <li class="nav-item">
+      <a href="#projects" class="nav-link">Projects</a>
+    </li>
+    <li class="nav-item">
+      <a href="#education" class="nav-link">Education</a>
+    </li>
+    <li class="nav-item">
+      <a href="#contact" class="nav-link">Contact</a>
+    </li>
+  </ul>
+      <div class="hamburger">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+      </div>
+      <img id="logo-img" src="./img/the-removebg-preview.png" alt="radina-geotgieva-logo">
     </nav>
-    <span>Radina Georgieva</span>
    </header>
    <main class="main-content">
     <section class="about-container" id="about">
@@ -32,11 +47,11 @@
         <div class="project">
        <img src="./img/Screenshot 2023-11-17 at 10.25.17.png" class="project-img" alt="giphy-site-screenshot">
         <ul class="project-description-container">
-          <li> WEB SPA </li>
-       <li>Discover the trending GIFs </li>
-        <li>Search GIFs</li>
-        <li> Upload GIFs to your account</li>
-        <li>Vanilla JS, GIPHY API</li>
+          <li class="project-text"> WEB SPA </li>
+       <li class="project-text">Discover the trending GIFs </li>
+        <li class="project-text">Search GIFs</li>
+        <li class="project-text"> Upload GIFs to your account</li>
+        <li class="project-text">Vanilla JS, GIPHY API</li>
        
       </ul>
       <a class="project-link" href="https://gitlab.com/BobiTsvetkov/telerik-web-projects.git">See the project</a>
@@ -44,10 +59,10 @@
         <div class="project">
           <img src="img/Screenshot 2023-11-17 at 10.28.11.png" class="project-img" alt="">
           <ul class="project-description-container">
-            <li>WEB SPA Forum with interactive platform designed to foster engaging discussions</li>
-         <li>Allows users to authenticate, create posts, comment, and express their opinions through likes and dislikes </li>
-          <li>An exclusive admin panel, ensures streamlined moderation and management of the forum, visible only to administrators</li>
-          <li> React, Firebase, Vite, Chakra UI</li>
+            <li class="project-text">WEB SPA Forum with interactive platform designed to foster engaging discussions</li>
+         <li class="project-text">Allows users to authenticate, create posts, comment, and express their opinions through likes and dislikes </li>
+          <li class="project-text">An exclusive admin panel, ensures streamlined moderation and management of the forum, visible only to administrators</li>
+          <li class="project-text"> React, Firebase, Vite, Chakra UI</li>
           
         </ul>
         <a class="project-link" href="https://gitlab.com/vlomliev/team-4-project-2.git">See the project</a>
@@ -55,18 +70,17 @@
         <div class="project">
           <img src="img/Landing1.png" class="project-img" alt="">
           <ul class="project-description-container">
-            <li> Real-time Web SPA Messenger. It incorporates instant messaging, voice, messaging, voice and video calls for a diverse and instant communication experience</li>
-         <li>Collaboration-friendly design supports organized team communication through designated channels</li>
-          <li>Connectify serves as an efficient platform for professional, academic, or casual real-time exchanges, emphasizing user-friendly functionality</li>
-          <li> React, TypeScript, Firebase, Vite, Redux Toolkit,Chakra UI</li>
-          <li>Vanilla JS, GIPHY API</li>
+            <li class="project-text"> Real-time Web SPA Messenger. It incorporates instant messaging, voice, messaging, voice and video calls for a diverse and instant communication experience</li>
+         <li class="project-text">Collaboration-friendly design supports organized team communication through designated channels</li>
+          <li class="project-text">Connectify serves as an efficient platform for professional, academic, or casual real-time exchanges, emphasizing user-friendly functionality</li>
+          <li class="project-text"> React, TypeScript, Firebase, Vite, Redux Toolkit,Chakra UI</li>
          
         </ul>
         <a class="project-link" href="https://gitlab.com/vlomliev/collab-messenger-team-4.git">See the project</a>
         </div>
       </div>
     </section>
-    <section class="education-container">
+    <section class="education-container" id="education">
       <div class="education-section">
         <h2>Education</h2>
      <div class="education">
@@ -99,5 +113,7 @@
     </section>
    </main>
    <footer></footer>
+   <script src="./hamburger.js"></script>
 </body>
+
 </html>
