@@ -3,23 +3,6 @@
 Responsive Personal Portfolio Website
 
 
-
-## Badges
-
-Add badges from somewhere like: [shields.io](https://shields.io/)
-
-
-
-## Color Reference
-
-| Color             | Hex                                                                |
-| ----------------- | ------------------------------------------------------------------ |
-| Example Color | ![#a75ea8](https://via.placeholder.com/10/0a192f?text=+) #a75ea8|
-| Example Color | ![#e6c7e3](https://via.placeholder.com/10/f8f8f8?text=+) #e6c7e3 |
-| Example Color | ![#595757](https://via.placeholder.com/10/00b48a?text=+) #595757|
-| Example Color | ![#00d1a0](https://via.placeholder.com/10/00b48a?text=+) #00d1a0 |
-
-
 ## Authors
 
 - @radina94(https://github.com/radinag94)
