@@ -115,24 +115,19 @@ a {
   background-color: transparent;
 }
 .project-text {
-  list-style:disc;
+  list-style: disc;
 }
 #profile-img {
-  /* height: 20vh; */
-  /* align-items:stretch; */
   height: 30vh;
-  /* margin-left: 10px; */
   justify-self: center;
   display: flex;
   border-radius: 40px;
-  /* margin-top: 30px; */
 }
 
 .about-container {
   display: grid;
   align-items: center;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  /* height: 50vh; */
 }
 h2 {
   margin-top: 30px;
@@ -157,7 +152,6 @@ section {
   font-size: 22px;
   display: grid;
   flex-direction: column;
-
   justify-items: center;
 }
 
@@ -167,7 +161,6 @@ section {
 .project-grid-container {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-  /* grid-template-areas: ".project .project .project"; */
   justify-items: center;
   grid-auto-columns: 1fr;
   gap: 50px;
@@ -213,9 +206,9 @@ ul li {
 }
 .education-container {
   display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
-    justify-items: center;
-    justify-content: center;
+  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  justify-items: center;
+  justify-content: center;
 }
 .education-section {
   display: grid;
@@ -237,8 +230,6 @@ ul li {
 footer {
   display: flex;
 }
-
-
 
 .technologies-section {
   display: grid;
@@ -268,7 +259,6 @@ footer {
   align-items: center;
   justify-content: center;
 }
-
 
 @media screen and (max-width: 768px) {
   .project {
@@ -307,20 +297,18 @@ footer {
   }
   .technologies-images {
     display: flex;
-    grid-template-columns: repeat(auto-fit,minmax(50px,1fr));
+    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
     width: 80%;
     margin: 0 auto;
-    /* background: red; */
     flex-wrap: wrap;
     justify-content: center;
- 
   }
   .nav-menu {
     position: fixed;
     left: -100%;
     top: 5rem;
     flex-direction: column;
-    background-color: #E6C7E3;
+    background-color: #e6c7e3;
     width: 100%;
     border-radius: 10px;
     text-align: center;
