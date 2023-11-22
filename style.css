@@ -47,8 +47,6 @@ header {
 nav {
   display: grid;
   grid-template-areas: "a a a a .logo-img-container";
-  margin-left: 20px;
-  margin-top: 20px;
   grid-template-columns: repeat(8, 1fr);
 }
 
@@ -77,10 +75,6 @@ nav {
   align-items: center;
 }
 
-.nav-item {
-  margin-left: 5rem;
-}
-
 .nav-link {
   font-size: 1.6rem;
   font-weight: 22px;
@@ -97,9 +91,6 @@ a {
 .video-section {
   background: #e6c7e3;
 }
-.about-container p {
-  padding: 80px;
-}
 .project-link:hover {
   color: rgb(224, 180, 227), 255;
   background-color: transparent;
@@ -115,48 +106,73 @@ a {
   background-color: transparent;
 }
 .project-text {
-  list-style: disc;
+  padding: 10px;
 }
 #profile-img {
   height: 30vh;
   justify-self: center;
   display: flex;
   border-radius: 40px;
+  padding: 30px;
 }
 
 .about-container {
-  display: grid;
+  display: flex;
   align-items: center;
-  grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+  flex-direction: row;
+  padding: 50px;
 }
-h2 {
-  margin-top: 30px;
+h1 {
   padding: 30px;
   color: #595757;
+  font-size: xx-large;
+}
+
+h2 {
+  padding: 30px;
+  color: #595757;
+  font-size: xx-large;
+
 }
 .social-icons {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
+  height: 100%;
+  text-align: center;
+  align-items: center;
+  align-content: center;
 }
 
 p {
   display: flex;
-  margin-left: 30px;
   justify-content: center;
   flex-wrap: wrap;
   align-content: flex-start;
   color: #595757;
+  padding: 20px;
 }
 section {
   font-size: 22px;
-  display: grid;
-  flex-direction: column;
-  justify-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.video-section {
+  font-size: 22px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
 }
 
 #projects {
   background: #e6c7e3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+  padding-top: 0px;
+
 }
 .project-grid-container {
   display: grid;
@@ -164,7 +180,7 @@ section {
   justify-items: center;
   grid-auto-columns: 1fr;
   gap: 50px;
-  margin: 30px;
+
 }
 .project {
   border: 2px solid #a75ea8;
@@ -197,7 +213,6 @@ section {
 ul {
   display: flex;
   flex-direction: column;
-  margin-top: 20px;
   list-style-type: none;
 }
 
@@ -211,10 +226,18 @@ ul li {
   justify-content: center;
 }
 .education-section {
-  display: grid;
-  grid-template-rows: 0.3fr 1fr;
+  display: flex;
+  flex-direction: column;
   width: 100%;
   justify-items: center;
+  align-items: center;
+}
+.all-education-container {
+  padding: 20px;
+}
+.institution-container {
+  display: flex; 
+  flex-direction: column;
 }
 .education {
   padding: 30px;
@@ -232,19 +255,24 @@ footer {
 }
 
 .technologies-section {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   grid-template-rows: 0.3fr 1fr;
-  /* width: 100%; */
-  justify-items: center;
-}
-.technologies-images {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-template-rows: 0.2fr 0.2fr 0.2fr;
+  width: 100%;
   justify-items: center;
   align-items: center;
-  width: 100%;
-  gap: 20px;
+}
+
+  .technologies-images {
+    display: flex;
+   justify-items: center;
+    align-items: center;
+    width: 100%;
+    gap: 20px;
+    padding: 20px;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    justify-content: center;
 }
 .tech-logo {
   width: auto;
@@ -264,49 +292,44 @@ footer {
   .project {
     width: 80%;
   }
+  .project-grid-container {
+padding: 0;
+  }
   .about-container p {
-    padding: 30px 60px;
-    margin: 0 auto;
+    padding: 15px;
   }
   .about-container {
-    height: 80vh;
+    flex-direction: column;
   }
   .education-container {
-    width: 80%;
     min-width: 40%;
     margin: 0 auto;
   }
   #profile-img {
     width: 50%;
     height: auto;
-    margin-top: 50px;
   }
-
-  .social-icons {
-    margin-bottom: 20px;
-  }
+.img-container{
+  display: flex;
+  justify-content: center;
+}
   video {
     display: none;
   }
-  h2 {
-    margin-bottom: 30px;
-  }
-
-  .technologies-section {
-    margin-bottom: 50px;
-  }
   .technologies-images {
     display: flex;
-    grid-template-columns: repeat(auto-fit, minmax(50px, 1fr));
-    width: 80%;
-    margin: 0 auto;
+    flex-direction: row;
+    width: 100%;
     flex-wrap: wrap;
     justify-content: center;
   }
+
+  
   .nav-menu {
     position: fixed;
     left: -100%;
     top: 5rem;
+    display: flex;
     flex-direction: column;
     background-color: #e6c7e3;
     width: 100%;
@@ -315,15 +338,14 @@ footer {
     transition: 0.3s;
     box-shadow: 0 10px 27px rgba(0, 0, 0, 0.05);
     background-clip: border-box;
+    height: 100%;
+    justify-content: flex-start;
+    opacity: 0.9;
   }
 
   .nav-menu.active {
-    display: flex;
-    flex-wrap: wrap;
     left: 0;
-    margin-top: 20px;
   }
-
   .nav-item {
     margin: 0;
     border-bottom: 1px solid #a75ea8;
@@ -331,13 +353,21 @@ footer {
     width: 100%;
     box-sizing: border-box;
     display: block;
+    opacity: 1 !important;
+  }
+  .nav-menu::before {
+    position: absolute;
+    content: "";
+    top: 0;
+    left: 0;
+    right: 0;
   }
 
   .hamburger {
     display: block;
     cursor: pointer;
-    margin-bottom: 20px;
   }
+  
 
   .hamburger.active .bar:nth-child(2) {
     opacity: 0;
@@ -352,5 +382,32 @@ footer {
   }
   #footer {
     flex-direction: column;
+    text-align: center;
   }
 }
+@media only screen and (max-width: 468px) and (min-width: 280px)  {
+  .project-grid-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+  .education-container {
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  }
+}
+@media only screen and (max-width: 468px) and (min-width: 415px) {
+  .education-container {
+    display: flex; 
+    flex-direction: column;
+  }}
+
+  @media only screen and (max-width: 1074px) and (min-width: 815px) {
+    .education-section {
+      display: flex;
+align-items: center;
+    }
+  }
+  @media only screen and (max-width: 815px) and (min-width: 768px) {
+    .project-grid-container {
+      grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    }
+    
+  }
