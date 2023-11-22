@@ -9,13 +9,15 @@
       href="https://fonts.googleapis.com/css2?family=Cabin:wght@500&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="style.css" />
+
     <title>Portfolio Webpage - Radina Georgieva</title>
   </head>
   <body class="container">
     <header>
       <nav class="navbar">
-        <ul class="nav-menu" role="navigation">
+        <ul class="nav-menu" aria-label="navigation">
           <li class="nav-item">
             <a href="#about" class="nav-link">About</a>
           </li>
@@ -29,11 +31,13 @@
             <a href="#contact" class="nav-link">Contact</a>
           </li>
         </ul>
-        <div class="hamburger">
-          <span class="bar"></span>
-          <span class="bar"></span>
-          <span class="bar"></span>
-        </div>
+        <label class="hamburger-menu">
+          <div class="hamburger">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </div>
+        </label>
         <img
           id="logo-img"
           src="./img/radina_georgieva-removebg-preview.png"
@@ -42,21 +46,23 @@
       </nav>
     </header>
     <main class="main-content">
-      <section class="video-section">
+      <div class="video-section">
         <video
           src="./video/radina georgieva (2).mp4"
           aria-label="radina-georgieva-logo-animation"
           muted
           autoplay
         ></video>
-      </section>
+      </div>
 
       <section class="about-container" id="about">
-        <img
-          src="./img/IMG_8630.jpeg"
-          id="profile-img"
-          alt="Radina Georgieva"
-        />
+        <div class="img-container">
+          <img
+            src="./img/IMG_8630.jpeg"
+            id="profile-img"
+            alt="Radina Georgieva"
+          />
+        </div>
         <div class="social-icons" id="contact">
           <p>
             Junior front-end web developer with 6+ months of experience coding
@@ -165,11 +171,13 @@
         </div>
       </section>
       <section class="projects-container" id="projects">
-        <h2>Projects</h2>
+        <div class="project-header">
+          <h1>Projects</h1>
+        </div>
         <div class="project-grid-container">
           <div class="project">
             <img
-              src="./img/Screenshot 2023-11-21 at 22.59.52.png"
+              src="./img/Screenshot-2023-11-21-at-22.59.52.png"
               class="project-img"
               alt="giphy-site-screenshot"
             />
@@ -188,7 +196,7 @@
           </div>
           <div class="project">
             <img
-              src="./img/Screenshot 2023-11-21 at 22.42.33.png"
+              src="./img/Screenshot-2023-11-21-at-22.42.33.png"
               class="project-img"
               alt="Bug-buddies-forum-screenshot"
             />
@@ -215,7 +223,7 @@
           </div>
           <div class="project">
             <img
-              src="img/Screenshot 2023-11-21 at 22.38.13.png"
+              src="img/Screenshot-2023-11-21-at-22.38.13.png"
               class="project-img"
               alt="Connectify-app-screenshot"
             />
@@ -244,29 +252,29 @@
       <section class="education-container" id="education">
         <div class="education-section">
           <h2 aria-label="type-of-education">Education</h2>
-          <div class="education">
-            <img
-              src="./img/telerik-academy.svg"
-              class="education-logo"
-              alt="telerik-academy-logo"
-            />
-            <h3>
-              Telerik Academy
-              <div class="degree" aria-label="alpha-javascript-track-degree">
-                Alpha JavaScript Track
+          <div class="all-education-container">
+            <div class="education">
+              <img
+                src="./img/telerik-academy.svg"
+                class="education-logo"
+                alt="telerik-academy-logo"
+              />
+              <div class="institution-container">
+                <h3>Telerik Academy</h3>
+                <div class="degree">Alpha JavaScript Track</div>
               </div>
-            </h3>
-          </div>
-          <div class="education">
-            <img
-              src="./img/MU-Varna-logo-EN (1).png"
-              class="education-logo"
-              alt="medical-university-logo"
-            />
-            <h3>
-              Medical University Varna
-              <div class="degree">Bsc in Nursing</div>
-            </h3>
+            </div>
+            <div class="education">
+              <img
+                src="./img/MU-Varna-logo-EN-(1).png"
+                class="education-logo"
+                alt="medical-university-logo"
+              />
+              <div class="institution-container">
+                <h3>Medical University Varna</h3>
+                <div class="degree">Bsc in Nursing</div>
+              </div>
+            </div>
           </div>
         </div>
         <div class="technologies-section">
@@ -344,7 +352,7 @@
               width="150"
               height="75"
               viewBox="0 0 128 128"
-              id="Gitlab"
+              id="Gitlab-Icon1"
             >
               <title>Gitlab Icon</title>
               <path
@@ -413,7 +421,7 @@
               height="75"
               fill="none"
               viewBox="0 0 48 48"
-              id="Github"
+              id="Github-Icon1"
             >
               <title>Github Icon</title>
               <rect
@@ -472,7 +480,7 @@
     </main>
     <footer id="footer">
       <div class="footer-container">
-        Copyright &copy 2023.RADINA GEORGIEVA PORTFOLIO WEBPAGE.All rights
+        Copyright &copy;2023.RADINA GEORGIEVA PORTFOLIO WEBPAGE.All rights
         reserved
       </div>
     </footer>
